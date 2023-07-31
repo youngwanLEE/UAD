@@ -4,7 +4,7 @@ This repository inlcudes official implementations and model weights for [UAD](ht
 [[`Arxiv`](https://arxiv.org/abs/2210.02077)][[`BibTeX`](#CitingUAD)]
  
 
-
+![DiT samples](assets/gaussian.jpg)
 
 ## Models
 ### COCO Object Detecton Baselines with [FCOS](https://arxiv.org/abs/1904.01355)
