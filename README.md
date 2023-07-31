@@ -13,7 +13,7 @@ Estimated uncertainty examples of the proposed UAD. Since there is no supervisio
 
 
 ## Models
-### COCO Object Detecton Baselines with [FCOS](https://arxiv.org/abs/1904.01355)
+
 Name | box AP (val) | box AP (test-dev) | download
 --- |:---:|:---:|:---:
 [UAD_R_50_ms_2x](configs/uad/uad_r_50_ms_2x.yaml) | 42.2 | 42.4 | [model](https://www.dropbox.com/scl/fi/jy28akq12z61sj94lie8z/uadet_r_50_ms_2x_42_23.pth?rlkey=j5s80y32z2qad6uoaq59cb2rb&dl=0)
