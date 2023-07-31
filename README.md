@@ -4,7 +4,13 @@ This repository inlcudes official implementations and model weights for [UAD](ht
 [[`Arxiv`](https://arxiv.org/abs/2210.02077)][[`BibTeX`](#CitingUAD)]
  
 
-![DiT samples](assets/gaussian.jpg)
+![UAD Gaussian](assets/gaussian.jpg)  
+C_L, C_R, C_T, and C_B denote the estimated certainty in [0, 1] value with respect to left, right, top, and bottom. For example, the proposed UAD
+estimates low top-directional certainty due to its ambiguous head boundary of the cat wearing a hat. This demonstrates that our method enables the detection network to quantify which direction is uncertain due to unclear or obvious objects.
+
+![UAD samples](assets/vis.jpg)  
+Estimated uncertainty examples of the proposed UAD. Since there is no supervision of uncertainty, we analyze the estimated uncertainty qualitatively. UAD estimates lower certainties on unclear and ambiguous boundaries due to occlusion and shadow. For example, Both the surfboard and the person in the left-bottom image have much lower bottom-directional certainties (i.e., C_B : 55% and 22%) as their shapes are quite unclear due to the water. Also, the right-directional certainty (C_R) of the woman in the right-bottom image is estimated only by 1% because it is covered by the tail of a cat on the TV.
+
 
 ## Models
 ### COCO Object Detecton Baselines with [FCOS](https://arxiv.org/abs/1904.01355)
