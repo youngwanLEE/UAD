@@ -1,0 +1,14 @@
+_BASE_: "../MS_R_101_2x.yaml"
+MODEL:
+  PROPOSAL_GENERATOR:
+    NAME: "GAUSSIAN_FCOS"
+  FCOS:
+    SIGMA_LOSS_WEIGHT: 0.05
+    NMS_TH: 0.6
+SOLVER:
+    CHECKPOINT_PERIOD: 10000
+TEST:
+  EVAL_PERIOD : 10000
+# DATASETS:
+#   TEST: ("coco_2017_test-dev",)
+OUTPUT_DIR: "output/g_fcos/uadet_r_101_ms_2x"
